@@ -60,7 +60,7 @@ sprite_index = s_kyblock;
 stuff = [
 	wp.fortune,
 ];
-jumpspeed = 4;
+jumpspeed = 4.6;
 grav = .21;
 accel = .1;
 frict = .26;

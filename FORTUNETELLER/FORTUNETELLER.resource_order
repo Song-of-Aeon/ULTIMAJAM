@@ -7,6 +7,8 @@
     {"name":"Entities","order":19,"path":"folders/Entities.yy",},
     {"name":"eases","order":1,"path":"folders/Entities/eases.yy",},
     {"name":"Fonts","order":13,"path":"folders/Fonts.yy",},
+    {"name":"Functionality","order":24,"path":"folders/Functionality.yy",},
+    {"name":"drawing","order":1,"path":"folders/Functionality/drawing.yy",},
     {"name":"General","order":22,"path":"folders/General.yy",},
     {"name":"Weapons","order":1,"path":"folders/General/Weapons.yy",},
     {"name":"Maps","order":23,"path":"folders/Maps.yy",},

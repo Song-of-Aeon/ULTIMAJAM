@@ -5,7 +5,7 @@ function st_fortune() {
 	accel = .1;
 	
 	if right.hold && up.hold dir = 45 else
-	if up.hold && left.hold dir = 45 else
+	if up.hold && left.hold dir = 135 else
 	if left.hold && down.hold dir = 225 else
 	if down.hold && right.hold dir = 315 else
 	if right.hold dir = 0 else
@@ -49,8 +49,8 @@ function st_fortune() {
 	
 	//var xtouching = [];
 	//var ytouching = move_and_collide(spd.h, spd.v, o_solid);
-	var xtouching = move_and_collide(spd.h, 0, o_solid);
-	var ytouching = move_and_collide(0, spd.v, o_solid);
+	xtouching = move_and_collide(spd.h, 0, o_solid);
+	ytouching = move_and_collide(0, spd.v, o_solid);
 	
 	var nottouching = ds_list_create();
 	collision_rectangle_list(bbox_left, bbox_top, bbox_right, bbox_bottom, o_notsolid, false, false, nottouching, false);
@@ -91,6 +91,8 @@ function st_fortune() {
 			dude.interaction();
 		}
 	}
+	
+	stuff[eqwp].poststep(usable);
 	//log(spd.h);
 	//log(x-xprevious);
 }

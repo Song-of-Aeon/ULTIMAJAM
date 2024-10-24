@@ -1,14 +1,23 @@
 weapongen({
 	step: function(input, alt) {
-		if input.hit {
-			//if me.dir != -1 {
-				setdir = distabs(me.dir, 4);
-			//}
-			active = length;
+		if !me.aerial && !active {
+			usable = true;
+		}
+		if input.hit && usable {
+			if !me.aerial me.y--;
+			if me.dir != -1 {
+				setdir = distabs(me.dir, 8);
+				active = length;
+			} else {
+				//c_clearradius(80);
+			}
+			usable = false;
 		}
 		if active {
+			me.spriteindex = s_kyblock;
 			me.spd.h = setdir.x;
 			me.spd.v = setdir.y;
+			goingup = !me.spd.v;
 			var friend = collision_rectangle(me.x-1.5 tiles, me.y-1.5 tiles, me.x+1.5 tiles, me.y+1.5 tiles, o_enemy, false, true);
 			if friend != noone {
 				//c_clearradius(80);
@@ -40,6 +49,26 @@ weapongen({
 				});
 			}
 		}
+		if --active == 0 {
+			me.spd.h *= .3;
+			me.spd.v *= .3;
+		}
+	},
+	poststep: function() {
+		if array_length(me.xtouching) && active {
+			active = false;
+			me.spd.h = -me.spd.h*.4;
+		}
+		if array_length(me.ytouching) && active {
+			active = false;
+			me.spd.v = -8*itneg(goingup)*.4;
+			me.aerial = true;
+			usable = true;
+			me.y += me.spd.v;
+			//me.y -= 5;
+		}
+		//me.x += me.spd.h;
+		
 	},
 	draw: function() {
 		
@@ -49,6 +78,7 @@ weapongen({
 	name: "fortune",
 	sprite: s_mistake,
 	active: 0,
-	length: 35,
+	length: 14,
 	setdir: noone,
+	goingup: false,
 });

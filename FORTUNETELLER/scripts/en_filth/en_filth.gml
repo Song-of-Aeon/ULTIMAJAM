@@ -2,7 +2,7 @@
 nu enemy("filth", s_when_im, 4, function() {
 	statish("attacking", false);
 	if !attacking {
-		log(x, y);
+		//log(x, y);
 		if x < me.x-(40+charge*4) {
 			if place_meeting(x+12, y, o_solid) && me.y < y && spd.v == 0 {
 				spd.v = -2.3;
