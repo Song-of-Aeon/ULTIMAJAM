@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "st_hurt",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "General",
-    "path": "folders/General.yy",
+  "$GMScript":"v1",
+  "%Name":"st_hurt",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"st_hurt",
+  "parent":{
+    "name":"General",
+    "path":"folders/General.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

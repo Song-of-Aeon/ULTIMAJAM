@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "x_intro",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "General",
-    "path": "folders/General.yy",
+  "$GMScript":"v1",
+  "%Name":"x_intro",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"x_intro",
+  "parent":{
+    "name":"General",
+    "path":"folders/General.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

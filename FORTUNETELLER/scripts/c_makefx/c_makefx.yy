@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "c_makefx",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "drawing",
-    "path": "folders/Scripts/drawing.yy",
+  "$GMScript":"v1",
+  "%Name":"c_makefx",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"c_makefx",
+  "parent":{
+    "name":"drawing",
+    "path":"folders/Scripts/drawing.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

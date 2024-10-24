@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "is_prime",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "data",
-    "path": "folders/Scripts/data.yy",
+  "$GMScript":"v1",
+  "%Name":"is_prime",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"is_prime",
+  "parent":{
+    "name":"data",
+    "path":"folders/Scripts/data.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

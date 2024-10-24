@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "deep_copy",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "data",
-    "path": "folders/Scripts/data.yy",
+  "$GMScript":"v1",
+  "%Name":"deep_copy",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"deep_copy",
+  "parent":{
+    "name":"data",
+    "path":"folders/Scripts/data.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

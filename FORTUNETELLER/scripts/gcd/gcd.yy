@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "gcd",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "convenience",
-    "path": "folders/Scripts/convenience.yy",
+  "$GMScript":"v1",
+  "%Name":"gcd",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"gcd",
+  "parent":{
+    "name":"convenience",
+    "path":"folders/Scripts/convenience.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

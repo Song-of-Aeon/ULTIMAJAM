@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"st_ky",
+  "%Name":"aaagma",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"st_ky",
+  "name":"aaagma",
   "parent":{
-    "name":"General",
-    "path":"folders/General.yy",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

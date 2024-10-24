@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "array_create_deref",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "General",
-    "path": "folders/General.yy",
+  "$GMScript":"v1",
+  "%Name":"array_create_deref",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"array_create_deref",
+  "parent":{
+    "name":"General",
+    "path":"folders/General.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

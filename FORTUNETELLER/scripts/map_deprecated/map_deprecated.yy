@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"st_ky",
+  "%Name":"map_deprecated",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"st_ky",
+  "name":"map_deprecated",
   "parent":{
-    "name":"General",
-    "path":"folders/General.yy",
+    "name":"Maps",
+    "path":"folders/Maps.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

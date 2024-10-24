@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "special_dnd_script",
-  "isCompatibility": false,
-  "isDnD": true,
-  "parent": {
-    "name": "Misc",
-    "path": "folders/Misc.yy",
+  "$GMScript":"v1",
+  "%Name":"special_dnd_script",
+  "isCompatibility":false,
+  "isDnD":true,
+  "name":"special_dnd_script",
+  "parent":{
+    "name":"Misc",
+    "path":"folders/Misc.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

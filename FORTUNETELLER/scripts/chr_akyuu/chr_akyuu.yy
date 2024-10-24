@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "chr_akyuu",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "other",
-    "path": "folders/CHR/other.yy",
+  "$GMScript":"v1",
+  "%Name":"chr_akyuu",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"chr_akyuu",
+  "parent":{
+    "name":"other",
+    "path":"folders/CHR/other.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

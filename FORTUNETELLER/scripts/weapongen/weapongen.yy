@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "weapongen",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Weapons",
-    "path": "folders/General/Weapons.yy",
+  "$GMScript":"v1",
+  "%Name":"weapongen",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"weapongen",
+  "parent":{
+    "name":"Weapons",
+    "path":"folders/General/Weapons.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

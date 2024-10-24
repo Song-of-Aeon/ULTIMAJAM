@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "c_maketile",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Maps",
-    "path": "folders/Maps.yy",
+  "$GMScript":"v1",
+  "%Name":"c_maketile",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"c_maketile",
+  "parent":{
+    "name":"Maps",
+    "path":"folders/Maps.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

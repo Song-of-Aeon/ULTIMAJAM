@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "textline_next",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Textbox",
-    "path": "folders/Textbox.yy",
+  "$GMScript":"v1",
+  "%Name":"textline_next",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"textline_next",
+  "parent":{
+    "name":"Textbox",
+    "path":"folders/Textbox.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

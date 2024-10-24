@@ -78,3 +78,7 @@ makeroomroom = room_add();
 room_goto(makeroomroom);
 observer_create(o_mapper);
 observer_create(o_persistent);*/
+
+
+
+//struct[$""] = 5;

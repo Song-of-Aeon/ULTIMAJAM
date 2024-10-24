@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "x_charsetup",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "technical",
-    "path": "folders/Dialogue/technical.yy",
+  "$GMScript":"v1",
+  "%Name":"x_charsetup",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"x_charsetup",
+  "parent":{
+    "name":"technical",
+    "path":"folders/Dialogue/technical.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

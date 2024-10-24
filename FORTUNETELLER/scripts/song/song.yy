@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "song",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Music",
-    "path": "folders/Music.yy",
+  "$GMScript":"v1",
+  "%Name":"song",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"song",
+  "parent":{
+    "name":"Music",
+    "path":"folders/Music.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

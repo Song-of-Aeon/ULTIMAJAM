@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "array_sum",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "array",
-    "path": "folders/Scripts/data/array.yy",
+  "$GMScript":"v1",
+  "%Name":"array_sum",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"array_sum",
+  "parent":{
+    "name":"array",
+    "path":"folders/Scripts/data/array.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

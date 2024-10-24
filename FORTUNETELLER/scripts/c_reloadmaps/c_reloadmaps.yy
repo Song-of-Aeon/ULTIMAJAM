@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "c_reloadmaps",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Maps",
-    "path": "folders/Maps.yy",
+  "$GMScript":"v1",
+  "%Name":"c_reloadmaps",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"c_reloadmaps",
+  "parent":{
+    "name":"Maps",
+    "path":"folders/Maps.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

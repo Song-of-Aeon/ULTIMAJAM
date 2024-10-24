@@ -1,4 +1,4 @@
-function keyboard_check_advanced() {
+/*function keyboard_check_advanced() {
 	if keyboard_check(vk_anykey) {
 		if keyboard_key = holding {
 			count++;
@@ -52,3 +52,4 @@ function makeEmptyKeyArray(){
 	}
 	return array;
 }
+*/

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "clampneg",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "data",
-    "path": "folders/Scripts/data.yy",
+  "$GMScript":"v1",
+  "%Name":"clampneg",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"clampneg",
+  "parent":{
+    "name":"data",
+    "path":"folders/Scripts/data.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "dir2hv",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "convenience",
-    "path": "folders/Scripts/convenience.yy",
+  "$GMScript":"v1",
+  "%Name":"dir2hv",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"dir2hv",
+  "parent":{
+    "name":"convenience",
+    "path":"folders/Scripts/convenience.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

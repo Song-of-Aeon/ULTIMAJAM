@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "enemy",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Enemies",
-    "path": "folders/General/Enemies.yy",
+  "$GMScript":"v1",
+  "%Name":"enemy",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"enemy",
+  "parent":{
+    "name":"Enemies",
+    "path":"folders/General/Enemies.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

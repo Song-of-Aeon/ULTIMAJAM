@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "bread_collision",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "General",
-    "path": "folders/General.yy",
+  "$GMScript":"v1",
+  "%Name":"bread_collision",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"bread_collision",
+  "parent":{
+    "name":"General",
+    "path":"folders/General.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

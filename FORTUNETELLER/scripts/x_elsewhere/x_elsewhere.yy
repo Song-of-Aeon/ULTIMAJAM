@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "x_elsewhere",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Tilesets",
-    "path": "folders/Maps/Tilesets.yy",
+  "$GMScript":"v1",
+  "%Name":"x_elsewhere",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"x_elsewhere",
+  "parent":{
+    "name":"Tilesets",
+    "path":"folders/Maps/Tilesets.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

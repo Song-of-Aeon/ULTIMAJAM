@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "c_saveroom",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Maps",
-    "path": "folders/Maps.yy",
+  "$GMScript":"v1",
+  "%Name":"c_saveroom",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"c_saveroom",
+  "parent":{
+    "name":"Maps",
+    "path":"folders/Maps.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

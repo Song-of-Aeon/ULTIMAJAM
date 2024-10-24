@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "tiletype",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Tilesets",
-    "path": "folders/Maps/Tilesets.yy",
+  "$GMScript":"v1",
+  "%Name":"tiletype",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"tiletype",
+  "parent":{
+    "name":"Tilesets",
+    "path":"folders/Maps/Tilesets.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

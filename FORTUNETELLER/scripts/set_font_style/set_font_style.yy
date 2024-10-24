@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "set_font_style",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Fonts",
-    "path": "folders/Fonts.yy",
+  "$GMScript":"v1",
+  "%Name":"set_font_style",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"set_font_style",
+  "parent":{
+    "name":"Fonts",
+    "path":"folders/Fonts.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

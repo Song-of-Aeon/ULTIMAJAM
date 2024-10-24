@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "x_textstyles",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Textbox",
-    "path": "folders/Textbox.yy",
+  "$GMScript":"v1",
+  "%Name":"x_textstyles",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"x_textstyles",
+  "parent":{
+    "name":"Textbox",
+    "path":"folders/Textbox.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

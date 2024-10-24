@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "collision_line_width",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "data",
-    "path": "folders/Scripts/data.yy",
+  "$GMScript":"v1",
+  "%Name":"collision_line_width",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"collision_line_width",
+  "parent":{
+    "name":"data",
+    "path":"folders/Scripts/data.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
