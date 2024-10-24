@@ -31,7 +31,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"s_trigger",
+    "path":"sprites/s_trigger/s_trigger.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

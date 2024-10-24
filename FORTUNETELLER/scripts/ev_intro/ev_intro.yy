@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ev_intro",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ev_intro",
+  "parent":{
+    "name":"General",
+    "path":"folders/General.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

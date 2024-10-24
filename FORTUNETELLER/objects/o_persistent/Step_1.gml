@@ -12,12 +12,20 @@ if keyboard_check_pressed(vk_f1) {
 			x += 20 tiles;
 			y += 20 tiles;
 		}
+		with o_trigger {
+			x2 += 20 tiles;
+			y2 += 20 tiles;
+		}
 	} else {
 		instance_create(-1, -1, o_mapper);
 		c_loadmap(global.currentmap);
 		with all {
 			x -= 20 tiles;
 			y -= 20 tiles;
+		}
+		with o_trigger {
+			x2 -= 20 tiles;
+			y2 -= 20 tiles;
 		}
 		instance_destroy(FANTASIA);
 		with o_enemy {

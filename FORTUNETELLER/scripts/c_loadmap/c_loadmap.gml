@@ -9,6 +9,8 @@ function c_loadmap(map_) {
 		dissolve = true;
 	}
 	with o_mapper {
+		log(map_.roomsize);
+		roomsize = map_.roomsize;
 		guys = [];
 		enemies = [];
 		triggers = [];
@@ -108,5 +110,9 @@ function c_loadmap(map_) {
 	with all {
 		x += 20 tiles;
 		y += 20 tiles;
+	}
+	with o_trigger {
+		x2 += 20 tiles;
+		y2 += 20 tiles;
 	}
 }

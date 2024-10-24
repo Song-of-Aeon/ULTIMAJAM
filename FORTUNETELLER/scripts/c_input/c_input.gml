@@ -24,6 +24,9 @@ function c_inputload() {
 	nu kinput("right", [vk_right, vk_numpad6, gp_padr, "D"], "Right");
 	
 	nu kinput("jump", ["Z"], "Jump");
+	nu kinput("select", ["Z"], "Select");
+	nu kinput("back", ["X"], "Back");
+	nu kinput("skip", [vk_control]);
 	
 	nu kinput("leftmenu", ["Q"]);
 	nu kinput("rightmenu", ["E"]);

@@ -170,13 +170,16 @@ new mapsetting("triggers", [["tra", "touch event", "set spawn"], variable_struct
 		options[2] = [""];
 		options[3] = [""];
 		statish("myscript", c_null);
-		if click.hit {
+		if click.drop {
 			myscript = script_get_index(get_string("tell me a story.", script_get_name(myscript)));
+			click.drop = false;
+			mydude.enter = myscript;
 		}
 		if click.hit {
 			c_pushhistory("placed trigger");
-			mydude = c_maketrigger(mouse_x, mouse_y, mouse_x, mouse_y, myscript);
+			mydude = c_maketrigger(mouse_x, mouse_y, mouse_x, mouse_y, c_null);
 			c_tilequantize(mydude, -8, -8);
+			//c_tilequantize(mydude, -8, -8);
 			array_push(o_mapper.triggers, mydude);
 		}
 		if click.hold {
@@ -316,6 +319,10 @@ new mapsetting("load", [["edit mode", "play game"], variable_struct_get_names(mp
 			with all {
 				x -= 20 tiles;
 				y -= 20 tiles;
+			}
+			with o_trigger {
+				x2 -= 20 tiles;
+				y2 -= 20 tiles;
 			}
 			//log("unenemied");
 			instance_destroy(FANTASIA);

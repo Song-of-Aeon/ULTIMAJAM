@@ -46,7 +46,7 @@ function undo() {
 			array_push(future, friend);
 			array_push(futurenames, array_pop(historynames));
 			c_loadmap(friend);
-			instance_destroy(ILLUSORY);
+			instance_destroy(FANTASIA);
 			with o_enemy {
 				step = c_null;
 			}
@@ -79,7 +79,7 @@ function redo() {
 		array_push(history, friend);
 		array_push(historynames, array_pop(futurenames));
 		c_loadmap(friend);
-		instance_destroy(ILLUSORY);
+		instance_destroy(FANTASIA);
 		with o_enemy {
 			step = c_null;
 		}

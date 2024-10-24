@@ -33,11 +33,11 @@ nu enemy("spawnpoint", s_impostor, 9999, c_spawnpointstep);
 
 function c_spawnpointstep() {
 	log("ha ha");
-	if !instance_exists(ILLUSORY) {
-		instance_create(x, y, ILLUSORY);
+	if !instance_exists(FANTASIA) {
+		instance_create(x, y, FANTASIA);
 	} else {
-		ILLUSORY.x = x;
-		ILLUSORY.y = y;
+		FANTASIA.x = x;
+		FANTASIA.y = y;
 	}
 	kys;
 }
