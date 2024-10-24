@@ -14,29 +14,59 @@ weapongen({
 			usable = false;
 		}
 		if active {
-			me.spriteindex = s_kyblock;
+			me.spriteindex = s_impostor;
 			me.spd.h = setdir.x;
 			me.spd.v = setdir.y;
+			goingleft = !me.spd.h;
 			goingup = !me.spd.v;
-			var friend = collision_rectangle(me.x-1.5 tiles, me.y-1.5 tiles, me.x+1.5 tiles, me.y+1.5 tiles, o_enemy, false, true);
+			var grabdist = 1 tiles;
+			var friend = collision_rectangle(me.x-grabdist, me.y-grabdist, me.x+grabdist, me.y+grabdist, o_enemy, false, true);
 			if friend != noone {
 				//c_clearradius(80);
 				active = false;
 				me.grabbing = friend;
 				me.release = 0;
 				friend.stun = true;
+				friend.spd.h = 0;
+				friend.spd.v = 0;
+				usable = true;
 				me.state = munction(function() {
 					if !instance_exists(grabbing) {
 						state = st_fortune;
 						exit;
 					}
 					release++;
+					if up.hit {
+						//c_clearradius(80);
+						spd.h = 0;
+						spd.v = 4;
+						state = st_fortune;
+						grabbing.spd.h = 0;
+						grabbing.spd.v = -8;
+					}
+					if right.hit {
+						//c_clearradius(80);
+						spd.h = -2;
+						spd.v = 0;
+						state = st_fortune;
+						grabbing.spd.h = 8;
+						grabbing.spd.v = 0;
+					}
 					if down.hit {
 						//c_clearradius(80);
-						grabbing.direction = 270;
-						grabbing.speed = 5;
+						spd.h = 0;
 						spd.v = -4;
 						state = st_fortune;
+						grabbing.spd.h = 0;
+						grabbing.spd.v = 8;
+					}
+					if left.hit {
+						//c_clearradius(80);
+						spd.h = 2;
+						spd.v = 0;
+						state = st_fortune;
+						grabbing.spd.h = -8;
+						grabbing.spd.v = 0;
 					}
 					if release >= 20 {
 						spd.h = 1.4*itneg(grabbing.x<x);
@@ -44,6 +74,7 @@ weapongen({
 						state = st_fortune;
 						grabbing.spd.h = 1.4*itneg(grabbing.x>x);
 						grabbing.spd.v = -1.6;
+						log("released");
 						grabbing.stun = false;
 					}
 				});
@@ -57,7 +88,8 @@ weapongen({
 	poststep: function() {
 		if array_length(me.xtouching) && active {
 			active = false;
-			me.spd.h = -me.spd.h*.4;
+			me.spd.h = -8*itneg(goingleft)*.4;
+			me.x += me.spd.h;
 		}
 		if array_length(me.ytouching) && active {
 			active = false;

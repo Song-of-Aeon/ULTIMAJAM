@@ -68,6 +68,9 @@ function st_fortune() {
 	//log("and it");
 	//log(xtouching);
 	//log(ytouching);
+	if array_length(xtouching) {
+		spd.h = 0;
+	}
 	if array_length(ytouching) {
 		leniance = lencount;
         aerial = false;

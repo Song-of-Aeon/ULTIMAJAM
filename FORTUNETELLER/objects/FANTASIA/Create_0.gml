@@ -41,12 +41,12 @@ altpos = 0;
 
 
 sprites = {
-	idle: s_ky,
-	walk: s_ky,
-	up: s_ky,
-	upwalk: s_ky,
-	down: s_ky,
-	jump: s_kyjump,
+	idle: s_mistake,
+	walk: s_mistake,
+	up: s_mistake,
+	upwalk: s_mistake,
+	down: s_mistake,
+	jump: s_mistake,
 }
 /*sprites = {
 	idle: s_kyblock,
@@ -56,7 +56,7 @@ sprites = {
 	down: s_kyblock,
 	jump: s_kyblock,
 }*/
-sprite_index = s_kyblock;
+sprite_index = s_impostor;
 stuff = [
 	wp.fortune,
 ];
@@ -64,7 +64,7 @@ jumpspeed = 4.6;
 grav = .21;
 accel = .1;
 frict = .26;
-airaccel = .04;
+airaccel = .1;
 airfrict = 0;
 walkspeed = 2.3;
 leniance = 10;

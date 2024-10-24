@@ -1,5 +1,5 @@
 //exit;
-nu enemy("filth", s_when_im, 4, function() {
+nu enemy("filth", s_impostor, 4, function() {
 	statish("attacking", false);
 	if !attacking {
 		//log(x, y);
@@ -36,13 +36,15 @@ nu enemy("filth", s_when_im, 4, function() {
 		spd.h = savedspeed;
 	}
 	
-	var a = {bbox_left: bbox_left+2,
+	/*var a = {bbox_left: bbox_left+2,
         bbox_top:bbox_top+grav,
         bbox_right: bbox_right-2,
         bbox_bottom:bbox_bottom+grav}
 	
-	var ymeeting = bread_collision(a,o_solid,COLTYPE.LESSTHANEQUALTO);
-    if !ymeeting {
+	var ymeeting = bread_collision(a,o_solid,COLTYPE.LESSTHANEQUALTO);*/
+	var xtouching = move_and_collide(spd.h, 0, o_solid);
+	var ytouching = move_and_collide(0, spd.v, o_solid);
+    if !array_length(ytouching) {
         spd.v += grav;
         aerial = true;
     } else {
@@ -55,10 +57,9 @@ nu enemy("filth", s_when_im, 4, function() {
         }
         spd.v = 0;
     }
-    c_newcollision();
-	
-	x += spd.h;
-	y += spd.v;
+    //c_newcollision();
+	//x += spd.h;
+	//y += spd.v;
 }, u, function() {
 	grav = .14;
 	aerial = false;

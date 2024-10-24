@@ -2,11 +2,25 @@ if instance_exists(o_mapper) exit;
 if !stun {
 	method(self, step)();
 } else {
-	if place_meeting(x, y, o_solid) && speed >= 0 {
-		speed = 0;
+	var xtouching = move_and_collide(spd.h, 0, o_solid);
+	var ytouching = move_and_collide(0, spd.v, o_solid);
+	if array_length(xtouching) {
+		log("ouch (horizontal)");
+        spd.h = -spd.h*.4;
 		stun = false;
 		hp--;
 		c_screenshake(8, 16);
+    }
+	if array_length(ytouching) {
+		log("ouch (vertical)");
+        spd.v = -spd.v*.4;
+		stun = false;
+		hp--;
+		c_screenshake(8, 16);
+    }
+	if x < 0 || y < 0 || x > room_width || y > room_height {
+		log("im good lol!");
+		stun = false;
 	}
 }
 
