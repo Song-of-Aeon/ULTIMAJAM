@@ -23,6 +23,8 @@ function c_inputload() {
 	nu kinput("up", [vk_up, vk_numpad8, gp_padu, "W"], "Up");
 	nu kinput("right", [vk_right, vk_numpad6, gp_padr, "D"], "Right");
 	
+	nu kinput("jump", ["Z"], "Jump");
+	
 	nu kinput("leftmenu", ["Q"]);
 	nu kinput("rightmenu", ["E"]);
 	nu kinput("click", [mb_left, vk_space, vk_enter]);

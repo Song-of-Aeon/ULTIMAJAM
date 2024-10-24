@@ -1,6 +1,5 @@
 randomize();
 
-global.dorpg = false;
 global.gw = 512;
 global.gh = 288;
 global.ratio = global.gh/global.gw;
@@ -9,6 +8,7 @@ global.fading = false;
 global.volume = 100;
 global.music = 100;
 global.kunctions = {};
+global.enemies = {};
 //global.gamesize = new vec2();
 //window_set_size(global.gamesize.x, global.gamesize.y);
 

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"wp_fortune",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"wp_fortune",
+  "parent":{
+    "name":"Weapons",
+    "path":"folders/General/Weapons.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

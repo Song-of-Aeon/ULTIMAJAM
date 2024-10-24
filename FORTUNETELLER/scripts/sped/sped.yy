@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"st_kydraw",
+  "%Name":"sped",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"st_kydraw",
+  "name":"sped",
   "parent":{
     "name":"General",
     "path":"folders/General.yy",

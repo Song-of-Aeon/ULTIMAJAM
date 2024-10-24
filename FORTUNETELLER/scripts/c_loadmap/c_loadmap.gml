@@ -48,8 +48,8 @@ function c_loadmap(map_) {
 			var friend = en[$map_.enemies[i].name];
 			map_.enemies[i].sprite = friend.sprite;
 			map_.enemies[i].create = friend.create;
-			map_.enemies[i].step = friend.step;
-			map_.enemies[i].draw = friend.draw;
+			//map_.enemies[i].step = munction(friend.step);
+			//map_.enemies[i].draw = munction(friend.draw);
 			/*if typeof(map_.enemies[i].sprite) == "string" {
 				map_.enemies[i].sprite = asset_get_index(map_.enemies[i].sprite);
 			}
@@ -65,7 +65,9 @@ function c_loadmap(map_) {
 				log(map_.enemies[i].draw, script_get_index(map_.enemies[i].draw));
 				map_.enemies[i].draw = script_get_index(map_.enemies[i].draw);
 			}*/
-			var chump = c_spawnenemy(map_.enemies[i].x, map_.enemies[i].y, map_.enemies[i]);
+			var chump = c_spawnenemy(map_.enemies[i].x, map_.enemies[i].y, friend);
+			chump.step = method(chump, chump.step);
+			chump.draw = method(chump, chump.draw);
 			var newman = deep_copy(map_.enemies[i]);
 			chump.links = newman.links;
 			chump.depth = newman.depth;

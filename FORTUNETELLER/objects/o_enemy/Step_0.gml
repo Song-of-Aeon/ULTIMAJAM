@@ -1,4 +1,14 @@
-step();
+if instance_exists(o_mapper) exit;
+if !stun {
+	method(self, step)();
+} else {
+	if place_meeting(x, y, o_solid) && speed >= 0 {
+		speed = 0;
+		stun = false;
+		hp--;
+		c_screenshake(8, 16);
+	}
+}
 
 //>>>>>>> 5c12bc3ffaafa12c9778e077e576a5f3a4e8542e
 

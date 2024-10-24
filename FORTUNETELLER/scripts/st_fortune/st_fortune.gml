@@ -1,21 +1,19 @@
-function st_ky() {
+function st_fortune() {
     //log(jump);
 	//log(weapons[eqwp]);
-	stuff[eqwp].step(usable);
 	
-	/*if debug.hit {
-		//textbox_create(txt_kotohime);
-		//blink();
-		c_loadmap(mp[$"asteroid"]);
-		//c_spawnenemy(10 tiles, 10 tiles, en.impostor);
-	}*/
 	accel = .1;
 	
+	if right.hold && up.hold dir = 45 else
+	if up.hold && left.hold dir = 45 else
+	if left.hold && down.hold dir = 225 else
+	if down.hold && right.hold dir = 315 else
+	if right.hold dir = 0 else
+	if up.hold dir = 90 else
+	if left.hold dir = 180 else	
+	if down.hold dir = 270 else
+	dir = -1;
 	
-	if left.hold dir = 180;
-	if right.hold dir = 0;
-	if down.hold dir = 270;
-	if up.hold dir = 90;
 	
 	
     hput = right.hold-left.hold;
@@ -29,10 +27,18 @@ function st_ky() {
 		spd.h = lerp(spd.h, hput*walkspeed, aerial ? airfrict : frict);
 	}
 	spd.v += grav;
-    if leniance && aerial && abs(spd.h) >= walkspeed*.8 && !down.hold {
+	
+	stuff[eqwp].step(usable);
+	
+	
+    if leniance && jump.hit {
 		spd.v = -jumpspeed;
         leniance = 0;
     }
+	
+	if jump.drop && -spd.v {
+		spd.v *= .3;
+	}
     /*if spd.v < 0 {
         if interact.drop {
             spd.v /= 2;

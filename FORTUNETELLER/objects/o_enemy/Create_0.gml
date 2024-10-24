@@ -10,3 +10,5 @@ iterations = 0;
 farts = 0;
 itsover = 0;
 variation = 0;
+stun = false;
+variation = 0;

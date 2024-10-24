@@ -1,4 +1,4 @@
-global.enemies = {};
+
 function enemy(name_, sprite_, hp_,  step_=c_null, draw_=draw_self, create_=c_null) constructor {
 	sprite = sprite_;
 	hp = hp_;
@@ -6,6 +6,8 @@ function enemy(name_, sprite_, hp_,  step_=c_null, draw_=draw_self, create_=c_nu
 	draw = draw_;
 	create = create_;
 	name = name_;
+	variation = 0;
+	depth = 0;
 	global.enemies[$name_] = self;
 }
 
@@ -18,6 +20,7 @@ function c_spawnenemy(x, y, archetype_) {
 	chump.sprite_index = archetype_.sprite;
 	chump.step = method(chump, archetype_.step);
 	chump.draw = method(chump, archetype_.draw);
+	method(chump, archetype_.create)();
 	chump.archetype_ = archetype_;
 	c_tilequantize(chump);
 	return chump;

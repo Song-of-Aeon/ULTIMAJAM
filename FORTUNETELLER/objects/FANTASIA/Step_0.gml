@@ -8,13 +8,14 @@ hp = clamp(hp, 0, maxhp);
 //}
 //window_set_caption(st(c_tilequantizeval(x)/global.tilesize) + ", " + st(c_tilequantizeval(y)/global.tilesize));
 
-if hp <= 0 {
+/*if hp <= 0 {
 	c_shoot(x, y, 0, 0, bul.explosion);
 	state = c_null;
 	drawstate = c_null;
-}
+}*/
 depth = -9;
 
 if y > room_height {
 	//room_goto(icarus);
 }
+//log(x, y, script_get_name(state), script_get_name(drawstate));

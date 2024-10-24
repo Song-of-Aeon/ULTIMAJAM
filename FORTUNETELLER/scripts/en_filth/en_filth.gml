@@ -1,15 +1,17 @@
-exit;
+//exit;
 nu enemy("filth", s_when_im, 4, function() {
+	statish("attacking", false);
 	if !attacking {
-		if x < df.x-(40+charge*4) {
-			if place_meeting(x+12, y, o_solid) && df.y < y && spd.v == 0 {
+		log(x, y);
+		if x < me.x-(40+charge*4) {
+			if place_meeting(x+12, y, o_solid) && me.y < y && spd.v == 0 {
 				spd.v = -2.3;
 				y--;
 			}
 			spd.h = min(spd.h+.1, 2.2);
 			charge = 0;
-		} else if x > df.x+(40+charge*4) {
-			if place_meeting(x-12, y, o_solid) && df.y < y && spd.v == 0 {
+		} else if x > me.x+(40+charge*4) {
+			if place_meeting(x-12, y, o_solid) && me.y < y && spd.v == 0 {
 				spd.v = -2.3;
 				y--;
 			}
@@ -22,12 +24,12 @@ nu enemy("filth", s_when_im, 4, function() {
 				spd.v = -2.2;
 				y--;
 				aerial = true;
-				if x < df.x savedspeed = 4 else savedspeed = -4;
+				if x < me.x savedspeed = 4 else savedspeed = -4;
 				charge = 0;
 				attacking = true;
-				boul = c_shoot(x, y, 0, 0, bul.big, c_red, function() {if !instance_exists(owner) {kys exit} x=owner.x; y=owner.y});
-				boul.owner = id;
-				boul.friendly = false;
+				//var boul = c_shoot(x, y, 0, 0, bul.big, c_red, function() {if !instance_exists(owner) {kys exit} x=owner.x; y=owner.y});
+				//boul.owner = id;
+				//boul.friendly = false;
 			}
 		} else charge = 0;
 	} else {
