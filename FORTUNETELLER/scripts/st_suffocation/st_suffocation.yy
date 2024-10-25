@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"st_suffocation",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"st_suffocation",
+  "parent":{
+    "name":"functionality",
+    "path":"folders/Bullets/functionality.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

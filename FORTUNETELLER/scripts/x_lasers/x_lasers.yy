@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"x_lasers",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"x_lasers",
+  "parent":{
+    "name":"Bullets",
+    "path":"folders/Bullets.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

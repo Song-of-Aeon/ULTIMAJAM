@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"c_lock",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"c_lock",
+  "parent":{
+    "name":"functionality",
+    "path":"folders/Bullets/functionality.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

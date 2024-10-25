@@ -1,7 +1,9 @@
 if instance_exists(o_mapper) exit;
 if !stun {
 	method(self, step)();
+	image_angle = lerp_angle(image_angle, 0, .1);
 } else {
+	image_angle += 11;
 	var xtouching = move_and_collide(spd.h, 0, o_solid);
 	var ytouching = move_and_collide(0, spd.v, o_solid);
 	if array_length(xtouching) {

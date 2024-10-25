@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"pt_demonstrator",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"pt_demonstrator",
+  "parent":{
+    "name":"Patterns",
+    "path":"folders/Patterns.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

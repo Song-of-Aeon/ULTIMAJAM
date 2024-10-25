@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"sm_parse",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"functionality",
+    "path":"folders/Fonts/functionality.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

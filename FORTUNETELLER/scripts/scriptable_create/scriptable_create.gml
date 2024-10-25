@@ -11,7 +11,7 @@ function scriptable_create(step=c_null, draw=draw_self, layer_="Instances", obey
 	return chump;
 }
 
-function scriptable_of(object, step=NUMBER5, draw=NUMBER5) {
+function scriptable_of(object, step=c_null, draw=c_null) {
 	var chump = instance_create(object.x, object.y, o_, object.layer);
 	chump.sprite_index = object.sprite_index;
 	chump.x = object.x;

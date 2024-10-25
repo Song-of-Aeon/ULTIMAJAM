@@ -1,5 +1,12 @@
 randomize();
 
+
+global.textguy = {};
+global.bullets = {};
+global.lasers = {};
+global.hitscans = {};
+global.patterns = {};
+global.tracklist = {};
 global.gw = 512;
 global.gh = 288;
 global.ratio = global.gh/global.gw;

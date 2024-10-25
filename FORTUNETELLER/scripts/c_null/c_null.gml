@@ -104,8 +104,8 @@ for (var loggable;; {log(loggable) break}) \
 //spit "hi guys";
 
 
-#macro MY_X ISAAC.visiblex
-#macro MY_Y ISAAC.visibley
+#macro MY_X FANTASIA.visiblex
+#macro MY_Y FANTASIA.visibley
 #macro gc global.count
 
 #macro ongod ;
@@ -143,7 +143,7 @@ for (var loggable;; {log(loggable) break}) \
 #macro vk_tilde 192
 #macro vk_central 12
 
-#macro archetype constructor
+//#macro archetype constructor
 
 //#macro vk_ 1
 

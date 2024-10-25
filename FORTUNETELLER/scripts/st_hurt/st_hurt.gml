@@ -1,38 +1,44 @@
 function st_hurt() {
-	if inv return false;
-	if ow.object_index == o_hitscan {
-		if array_length(ow.hitlist) >= ow.multihit return false;
-		if array_length(ow.hitlist) == ow.multihit-1 {
-			ow.size = point_distance(x, y, ow.x, ow.y);
-		}
-		array_push(ow.hitlist, id);
-	}
-	takingdamage = ow.damage-defense;
-	c_damagenum(id, takingdamage);
-	hp -= takingdamage;
-	if object_index != df {
-		c_healradius(x, y, takingdamage*15);
-	}
-	c_screenshake(takingdamage*2, 8);
-	if ow.destructible {
-		instance_destroy(ow);
-	}
-	return true;
-}
-/*
-function st_hurt() {
 	var returnable = false;
-	if !inv {
+	var isenemy = ow.friendly == true;
+	//log(isenemy, damage);
+	if !inv && !get_value(ow, "delay") {
 		takingdamage = ow.damage;
-		se_play(snd_hurt);
-		hp -= takingdamage;
-		c_inv(invtime);
-		c_screenshake(osdhufji, inv/2);
+		if takingdamage > hp && !isenemy {
+			se_play(array_random([se_hurt, se_hurtwo]));
+			state = st_deathbomb;
+			takingtype = ow.type;
+		} else {
+			if isenemy {
+				if !c_dohook(hooks.onenemyhit, [id, ow]) {
+					takingdamage = ow.damage-defense;
+					if armor {
+						takingdamage /= 10;
+					}
+					//STATS.damagedealt += takingdamage;
+					if c_doenemyhook("onhit", self) exit;
+					hp -= takingdamage;
+				}
+			} wlaw if !c_dohook(hooks.onhit, [id, ow]) {
+				var osdhufji = max(takingdamage-defense, 1);
+				//STATS.damagetaken += osdhufji;
+				se_play(se_hurt, u, .8, .2); //RE ENABLE THIS SHIT !!
+				hp -= osdhufji;
+				//with o_boss capturing = false; //the correct way
+				if instance_exists(o_boss) o_boss.capturing = false; //the baby way
+				c_inv(invtime);
+				c_screenshake(osdhufji, inv/2);
+				FANTASIA.direction = ow.image_angle+90;
+				FANTASIA.speed = ow.damage*c_gettimescale(me);
+				//FIX THIS LATER
+				//1/29/2024 FIX THIS LATER LATER 
+			}
+		}
 		returnable = true;
 	}
-	if ow.destructible {
+	if instance_exists(ow) && ow.destructible && !get_value(ow, "delay") {
 		instance_destroy(ow);
 	}
 	return returnable;
 }
-*/
+#macro wlaw else

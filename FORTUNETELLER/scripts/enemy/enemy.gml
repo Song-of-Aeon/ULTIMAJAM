@@ -28,8 +28,8 @@ function c_spawnenemy(x, y, archetype_) {
 
 
 
-nu enemy("impostor", s_if_you, 100);
-nu enemy("spawnpoint", s_impostor, 9999, c_spawnpointstep);
+//nu enemy("impostor", s_if_you, 100);
+//nu enemy("spawnpoint", s_impostor, 9999, c_spawnpointstep);
 
 function c_spawnpointstep() {
 	log("ha ha");

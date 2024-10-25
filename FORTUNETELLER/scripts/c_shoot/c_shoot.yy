@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"c_shoot",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"c_shoot",
+  "parent":{
+    "name":"Bullets",
+    "path":"folders/Bullets.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

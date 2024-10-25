@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"bullet",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"bullet",
+  "parent":{
+    "name":"functionality",
+    "path":"folders/Bullets/functionality.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

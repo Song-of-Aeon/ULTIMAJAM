@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"c_link",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"c_link",
+  "parent":{
+    "name":"functionality",
+    "path":"folders/Bullets/functionality.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

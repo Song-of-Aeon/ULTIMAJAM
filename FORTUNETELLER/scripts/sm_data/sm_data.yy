@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sm_data",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sm_data",
+  "parent":{
+    "name":"functionality",
+    "path":"folders/Fonts/functionality.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

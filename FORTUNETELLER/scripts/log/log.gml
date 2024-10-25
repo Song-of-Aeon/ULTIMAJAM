@@ -30,7 +30,7 @@ function log() {
 	if array_contains_string(stack, "o_bullet") {
 		hue = 25;
 	}
-	if array_contains_string(stack, "ISAAC") {
+	if array_contains_string(stack, "FANTASIA") {
 		hue = 140;
 	}
 	if array_contains_string(stack, "o_particlemanager") {

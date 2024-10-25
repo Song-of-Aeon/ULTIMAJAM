@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"x_chains",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"x_chains",
+  "parent":{
+    "name":"Bullets",
+    "path":"folders/Bullets.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

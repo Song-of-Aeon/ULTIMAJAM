@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"st_hurt",
   "parent":{
-    "name":"General",
-    "path":"folders/General.yy",
+    "name":"functionality",
+    "path":"folders/Bullets/functionality.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

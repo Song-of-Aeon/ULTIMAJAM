@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"c_bulletburst",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"c_bulletburst",
+  "parent":{
+    "name":"functionality",
+    "path":"folders/Bullets/functionality.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

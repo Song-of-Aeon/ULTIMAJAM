@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"ds_list_to_array",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "name":"functionality",
+    "path":"folders/Bullets/functionality.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"se_enemyDie",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.59356,
+  "name":"se_enemyDie",
+  "parent":{
+    "name":"particle sprites",
+    "path":"folders/Bullets/particle sprites.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"se_enemyDie.wav",
+  "type":0,
+  "volume":0.23,
+}

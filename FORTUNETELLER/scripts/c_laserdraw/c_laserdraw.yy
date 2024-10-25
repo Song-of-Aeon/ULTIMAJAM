@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"c_laserdraw",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"c_laserdraw",
+  "parent":{
+    "name":"functionality",
+    "path":"folders/Bullets/functionality.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

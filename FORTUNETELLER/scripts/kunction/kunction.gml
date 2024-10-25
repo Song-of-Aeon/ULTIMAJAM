@@ -1,4 +1,4 @@
-function kunction(func_, inputs_=[vk_tilde]) archetype {
+function kunction(func_, inputs_=[vk_tilde]) constructor {
 	with other statish("kunctions", {});
 	func = func_;
 	inputs = inputs_;
